@@ -3,20 +3,19 @@
 version = 3
 
 [[package]]
+name = "both"
+version = "0.1.0"
+dependencies = [
+ "trait-def",
+]
+
+[[package]]
 name = "overr"
 version = "0.1.0"
 dependencies = [
  "trait-def",
- "under",
 ]
 
 [[package]]
 name = "trait-def"
 version = "0.1.0"
-
-[[package]]
-name = "under"
-version = "0.1.0"
-dependencies = [
- "trait-def",
-]

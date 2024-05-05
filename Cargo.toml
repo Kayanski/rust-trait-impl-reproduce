@@ -1,2 +1,2 @@
 [workspace]
-members = ["trait-def", "under", "over"]
+members = ["trait-def", "over", "both"]

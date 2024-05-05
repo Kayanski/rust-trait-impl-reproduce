@@ -1,11 +1,9 @@
 use trait_def::Test;
-use under::{First, FirstArgument};
+use trait_def::{First, FirstArgument};
 
 pub struct Second;
 
-pub enum SecondArgument {
-    First(FirstArgument),
-}
+pub struct SecondArgument;
 
 impl Test for Second {
     type Exec = SecondArgument;
@@ -14,7 +12,7 @@ impl Test for Second {
 // This doesn't work
 impl From<<First as Test>::Exec> for SecondArgument {
     fn from(value: <First as Test>::Exec) -> Self {
-        Self::First(value)
+        Self
     }
 }
 
